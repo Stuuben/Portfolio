@@ -4,8 +4,9 @@
 }
 h1 {
     color: #FFFFFF;
+ 
 }
-h2,h3, h4 {
+h3, h4 {
     color: #FFFFFF;
     padding: 1rem
 }
@@ -37,4 +38,31 @@ a:hover {
 .img-container img {
   width: 30vh;
   border-radius: 50% 
+}
+
+@media screen and (min-width: 768px) {
+    .container-fluid {
+        display: flex;
+        position: relative;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+    header {
+       padding-right: 1rem;
+       height: 300px;
+    }
+    h1 { 
+        
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+       
+    }
+    a {
+        margin-top: 100px;
+    }
+    
 }
