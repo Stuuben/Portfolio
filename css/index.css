@@ -1,0 +1,16 @@
+container {
+    background-color: #404042;
+    height: 100vh;
+    
+}
+
+
+body {
+    background-color: #404042;
+    border-color: aqua;
+    
+}
+
+section {
+    margin: 0;
+}
