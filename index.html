@@ -18,60 +18,96 @@
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
       crossorigin="anonymous"
     ></script>
-    <link href="/Portfolio/css/index.css" rel="stylesheet" />
+    <link href="/css/index.css" rel="stylesheet" />
   </head>
   <body>
-    <main class="container-fluid">
-        <header class="row text-center">
-            <h1>Portfolio</h1>
-            <nav class="row">
-                <section class="col-3 text-center"> <a href="Home">Home</a></section>
-                <section class="col-3 text-center"><a href="About">About</a></section>
-                <section class="col-3 text-center"><a href="Skills">Skills</a></section>
-                <section class="col-3 text-center"><a href="Contact">Contact</a></section>
-                </section>
-              </nav>
-        </header>
-
-      <section class="row">
+    <main class="container-fluid border">
+      <header class="row text-center">
+        <h1>Portfolio</h1>
+        <nav class="row">
+          <section class="col-3 text-center">
+            <a href="Home"><h5>Home</h5></a>
+          </section>
+          <section class="col-3 text-center">
+            <a href="About"><h5>About</h5></a>
+          </section>
+          <section class="col-3 text-center">
+            <a href="Skills"><h5>Skills</h5></a>
+          </section>
+          <section class="col-3 text-center">
+            <a href="Contact"><h5>Contact</h5></a>
+          </section>
+        </nav>
+        <aside class="Social"></aside>
+      </header>
+      <div class="row">
         <article class="col-12 col-md-12 col-lg-12 border">
-            <div class="img-container">
-                <img class="col-12" src="/Portfolio/assets/jagjag.jpg" alt="Adam">
-            </div>
-    
-            <p class="text-center">Hi, i'm Adam!</p>
+          <div class="img-container">
+            <img class="col-12" src="/assets/jagjag.jpg" alt="Adam" />
+          </div>
+          <p class="text-center">Hi, i'm Adam!</p>
           <p class="text-center"></p>
           <h2 class="text-center">FrontEnd Devloper</h2>
         </article>
-        <article class="row-12 col-md-6 col-lg-6 border"><h4>About</h4><p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque quam
-          iste necessitatibus alias sequi labore quas totam distinctio beatae
-          omnis, praesentium veritatis cum saepe deleniti qui itaque adipisci
-          possimus nobis. Lorem ipsum dolor sit, amet consectetur adipisicing
-          elit. Quod odit, amet adipisci sit quasi, ab est alias tempore itaque
-          delectus optio sint quibusdam, eligendi quia ducimus ipsum! Minima,
-          dolorum eius!</p>
+        <article class="row-12 col-md-12 col-lg-12 border">
+          <h4>About</h4>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque quam
+            iste necessitatibus alias sequi labore quas totam distinctio beatae
+            omnis, praesentium veritatis cum saepe deleniti qui itaque adipisci
+            possimus nobis. Lorem ipsum dolor sit, amet consectetur adipisicing
+            elit. Quod odit, amet adipisci sit quasi, ab est alias tempore
+            itaque delectus optio sint quibusdam, eligendi quia ducimus ipsum!
+            Minima, dolorum eius! Hej! Jag heter Adam Stuborn. Jag studerar för
+            närvarnade på Medieinstitutet i Stockholm för att bli Frontend
+            utvecklare. Jag är 34 år och svidar nu om för att kasta mig ut i IT
+            världen. På fritiden gillar jag att åka snowboard, wakeboard,
+            kitesurfa och sitta vid datorn såklart ;)
+          </p>
         </article>
-        <article class="row-12 col-md-6 col-lg-6 border"><h4 class="text-end">Skills</h4><p>
+        <article class="row-12 col-md-12 col-lg-12 border">
+          <h4 class="text-end">Skills</h4>
+          <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque quam
             iste necessitatibus alias sequi labore quas totam distinctio beatae
             omnis, praesentium veritatis cum saepe deleniti qui itaque adipisci
             possimus nobis. Lorem ipsum dolor sit, amet consectetur adipisicing
-            elit. Quod odit, amet adipisci sit quasi, ab est alias tempore itaque
-            delectus optio sint quibusdam, eligendi quia ducimus ipsum! Minima,
-            dolorum eius!</p>
-          </article>
-          <article class="row-12 border"><h4 class="text-center">Contact</h4><p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque quam
-            iste necessitatibus alias sequi labore quas totam distinctio beatae
-            omnis, praesentium veritatis cum saepe deleniti qui itaque adipisci
-            possimus nobis. Lorem ipsum dolor sit, amet consectetur adipisicing
-            elit. Quod odit, amet adipisci sit quasi, ab est alias tempore itaque
-            delectus optio sint quibusdam, eligendi quia ducimus ipsum! Minima,
-            dolorum eius!</p>
-          </article>
-      </section>
+            elit. Quod odit, amet adipisci sit quasi, ab est alias tempore
+            itaque delectus optio sint quibusdam, eligendi quia ducimus ipsum!
+            Minima, dolorum eius!
+          </p>
+        </article>
+        <article class="row-12">
+          <h4 class="text-center">Contact Me</h4>
+
+          <form class="row-12 col-md-6">
+            <ul class="row-12 row-md-12">
+              <!-- <li class="box">
+                  <input type="text" id="name" placeholder="Name" />
+                  <input type="email" id="email" required placeholder="Email" />
+                </li> -->
+              <li>
+                <input type="text" id="name" placeholder="Name" />
+              </li>
+              <li>
+                <input type="email" id="email" required placeholder="Email" />
+              </li>
+              <li>
+                <input type="text" id="subj" placeholder="Subject" />
+              </li>
+              <li>
+                <textarea
+                  name="Message"
+                  id="msg"
+                  cols="40"
+                  rows="10"
+                  placeholder="Message"
+                ></textarea>
+              </li>
+            </ul>
+          </form>
+        </article>
+      </div>
     </main>
-    
   </body>
 </html>
