@@ -12,7 +12,7 @@ header {
     margin: 0;
     min-height: 100vh;
 }
-ul {
+nav ul {
     display: flex;
     justify-content: space-around;
     padding: 0;
@@ -59,6 +59,31 @@ a {
 a:hover {
     color:#FFFFFF;   
 }
+#github {
+    color: #FFFFFF;
+    transition: 0.6s;
+    
+}
+#github:hover {
+  
+   transform: scale(1.3);
+  
+
+}
+
+#linkedin, #instagram {
+    color:#42D851;
+    transition: 0.6s;
+    
+}
+#linkedin:hover, #instagram:hover {
+    transform: scale(1.3);
+}
+    
+
+
+
+
 .img-container {
    margin-top: 5rem;
     display: flex;
@@ -85,13 +110,43 @@ form input,textarea,::placeholder {
     color: #FFFFFF;
 }
 form li {
-    padding: 0.5rem;
+    padding: 0.2rem;
     display: flex;
     justify-content: space-between;
+}
+button{
+    width: 100px;
+    height: 30px;
+    background-color: #42D851;
+    border-radius: 10px;
+    transition: color 0.5s ease;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    
+   
+   
+
+}
+button:hover {
+color: #FFFFFF;
 }
 .content {
     margin-top: 5vh;
 }
+
+.icons {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons a {
+    margin: 10px
+}
+
 
 @media screen and (min-width: 768px) {
      .container-fluid {    
@@ -101,7 +156,7 @@ form li {
      display: flex;
      flex-direction: column;
     }
-    ul {
+    nav ul {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -118,7 +173,7 @@ form li {
       
       
     }
-    li {
+     nav li {
         margin-top: 5vh;
     }
     
