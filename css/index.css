@@ -1,230 +1,226 @@
-
 body {
-    background-color: #404042;
-    position: relative;
+  background-color: #404042;
+  position: relative;
 }
-header {
-    padding: 0;
-    background-color:#363637;
-}
-.container-fluid {
-    padding: 0;
-    margin: 0;
-    min-height: 100vh;
-}
-nav ul {
-    display: flex;
-    justify-content: space-around;
-    padding: 0;
-}
-i {
-    display: flex;
-    justify-content: center;
-}
-h1 {
-    color: #FFFFFF;
-    display: flex;
-    justify-content: center;
-    font-size: 30px;
-}
-h3, h4 {
-    color: #FFFFFF;
-    padding: 1rem
-}
-h2 {
-    color:#42D851;
-    font-size: 42px;
-}
-h5 {
-    text-align: center;
-}
-p {
-    color: #FFFFFF;
-    padding: 1rem
 
+header {
+  padding: 0;
+  background-color: #363637;
 }
+
+.sticky {
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+.container-fluid {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  text-shadow: 4px 2px 6px rgb(0, 0, 0);
+}
+
+i {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  text-shadow: 4px 2px 6px rgb(0, 0, 0);
+}
+
+h3, h4 {
+  color: #FFFFFF;
+  padding: 1rem;
+  text-shadow: 4px 2px 6px rgb(0, 0, 0);
+}
+
+h2 {
+  color: #42D851;
+  font-size: 42px;
+  text-shadow: 4px 2px 6px rgb(0, 0, 0);
+}
+
+h5 {
+  text-align: center;
+}
+
+p {
+  color: #FFFFFF;
+  padding: 1rem;
+}
+
 article h4 {
-    text-align: center;
+  text-align: center;
 }
+
 li {
-    list-style:none;  
+  list-style: none;
 }
+
 a {
-    text-decoration: none;
-    font-style: unset;
-    font-weight: bold;
-    color: #42D851;
-    transition: color 0.3s ease-in-out;   
+  text-decoration: none;
+  font-style: unset;
+  font-weight: bold;
+  color: #42D851;
+  transition: color 0.3s ease-in-out;
 }
 a:hover {
-    color:#FFFFFF;   
+  color: #FFFFFF;
 }
+
 #github {
-    color: #FFFFFF;
-    transition: 0.6s;
-    
+  color: #FFFFFF;
+  transition: 0.6s;
+  text-shadow: 4px 2px 6px rgb(0, 0, 0);
 }
 #github:hover {
-  
-   transform: scale(1.3);
-  
-
+  transform: scale(1.3);
 }
 
-#linkedin, #instagram {
-    color:#42D851;
-    transition: 0.6s;
-    
+#instagram {
+  color: #42D851;
+  transition: 0.6s;
+  text-shadow: 4px 2px 6px rgb(0, 0, 0);
 }
-#linkedin:hover, #instagram:hover {
-    transform: scale(1.3);
+#instagram:hover {
+  transform: scale(1.3);
 }
-    
 
-
-
+#linkedin {
+  color: #42D851;
+  transition: 0.6s;
+  text-shadow: 4px 2px 6px rgb(0, 0, 0);
+}
+#linkedin:hover {
+  transform: scale(1.3);
+}
 
 .img-container {
-   margin-top: 5rem;
-    display: flex;
-    justify-content: center;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
 }
 .img-container img {
   width: 30vh;
   border-radius: 50%;
+  box-shadow: 5px 5px 5px;
 }
+
 form {
-    display: flex;
-    position: relative;   
-}
-input {
-    display: flex;
+  display: flex;
+  position: relative;
 }
 form ul {
-    list-style-type: none;   
-    position: relative;
-    
-}
-form input,textarea,::placeholder {
-    background-color: #6f6f72;
-    color: #FFFFFF;
+  list-style-type: none;
+  position: relative;
 }
 form li {
-    padding: 0.2rem;
-    display: flex;
-    justify-content: space-between;
+  padding: 0.2rem;
+  display: flex;
+  justify-content: space-between;
 }
-button{
-    width: 100px;
-    height: 30px;
-    background-color: #42D851;
-    border-radius: 10px;
-    transition: color 0.5s ease;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 15px;
-    
-   
-   
 
+input {
+  display: flex;
 }
+
+form input, textarea, ::placeholder {
+  background-color: #6f6f72;
+  color: #FFFFFF;
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  background-color: #42D851;
+  border-radius: 10px;
+  transition: color 0.5s ease;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+}
+
 button:hover {
-color: #FFFFFF;
+  color: #FFFFFF;
 }
+
 .content {
-    margin-top: 5vh;
+  margin-top: 5vh;
 }
 
 .icons {
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.icons a {
-    margin: 10px
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.icons a {
+  margin: 10px;
+}
 
 @media screen and (min-width: 768px) {
-     .container-fluid {    
-       display: flex;   
-    }
-    header {
-     display: flex;
-     flex-direction: column;
-    }
-    nav ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        margin-top: 10vh;
-        
-        
-        
-    }
-    nav {
-        display: flex;
-        flex-direction: column;
-     
-      
-      
-    }
-     nav li {
-        margin-top: 5vh;
-    }
-    
-    
+  .container-fluid {
+    display: flex;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  header .sticky {
+    position: sticky;
+    top: 0;
+    width: 100%;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 10vh;
+  }
+  nav li {
+    margin-top: 5vh;
+  }
 }
-    
 @media screen and (min-width: 1200px) {
-    
-    .content {
-        display: flex;
-   position: relative;
-   
-        
-     
-    }
-    #about {
-       
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
+  .content {
+    display: flex;
+    position: relative;
+  }
+  #about {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  #skills {
+    display: flex;
+    width: 100%;
+  }
+  section.content article {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
-
-     
-     
-    }
-    #skills {
-        display: flex;
-        width: 100%;
-   
-
-
-    }
-    section.content article {
-        display: flex;
-        flex-direction: column;
-      
-  
-
-    }
-} 
-
-
-
-
-
-
-
-
-
- 
-
-    
-    
+/*# sourceMappingURL=index.css.map */

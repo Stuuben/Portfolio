@@ -1,0 +1,17 @@
+@use "variables" as var;
+
+@mixin justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin center-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin text-shadow {
+  text-shadow: 4px 2px 6px var.$shadow-color;
+  
+}
