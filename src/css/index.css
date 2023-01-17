@@ -221,6 +221,16 @@ button:hover {
     display: flex;
     flex-direction: column;
   }
+  #contact {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+   
+  }
+  #repo {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
