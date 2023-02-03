@@ -8,6 +8,7 @@ body {
 header {
   padding: 0;
   background-color: var.$tertiary-color;
+  border-right: rgba(146, 142, 142, 0.467) 1px solid;
 }
 
 .sticky {
@@ -37,7 +38,6 @@ i {
 
   &:hover {
     transform: scale(1.3);
-    
   }
 }
 
@@ -78,6 +78,7 @@ article {
 li {
   list-style: none;
 }
+
 a {
   text-decoration: none;
   font-style: unset;
@@ -217,6 +218,8 @@ a {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
+  box-shadow: 3px 3px 5px 5px;
+
   border-radius: 100%;
 }
 
@@ -357,6 +360,12 @@ button:hover {
 }
 
 @media screen and (min-width: 1200px) {
+  header {
+    max-width: 200px;
+  }
+  i {
+    font-size: 40px;
+  }
   .content {
     display: flex;
     position: relative;
