@@ -1,0 +1,140 @@
+@use "variables" as var;
+@use "mixins" as mix;
+
+/* header */
+
+.header {
+  background-color: var.$tertiary-color;
+  position: sticky;
+  width: 100%;
+  z-index: 3;
+  i {
+    display: none;
+  }
+
+  @include mix.for-tablets {
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: var.$tertiary-color;
+    font-size: 1.3rem;
+
+    i {
+      visibility: hidden;
+    }
+    p {
+      font-size: 1rem;
+      padding: 0;
+      margin: 0;
+    }
+    li {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    li a {
+      display: block;
+      text-decoration: none;
+      color: var.$secondary-color;
+    }
+    & a:hover {
+      text-decoration: underline;
+    }
+
+    @include mix.text-shadow;
+
+    @include mix.for-tablets {
+    }
+  }
+}
+
+/* menu */
+
+.menu {
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+
+  @include mix.for-tablets {
+    max-height: none;
+  }
+}
+
+/* menu icon */
+
+.menu-icon {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  padding: 25px 20px;
+  position: relative;
+  user-select: none;
+
+  @include mix.for-tablets {
+    display: none;
+  }
+
+  .nav-icon {
+    background: white;
+    display: block;
+    height: 4.5px;
+    position: relative;
+    transition: background 0.2s ease-out;
+    width: 30px;
+    border-radius: 5px;
+
+    &::before,
+    &::after {
+      background: var.$secondary-color;
+      content: "";
+      display: block;
+      height: 100%;
+      position: absolute;
+      transition: all 0.2s ease-out;
+      width: 100%;
+      border-radius: 5px;
+    }
+    &::before {
+      top: 10px;
+    }
+    &::after {
+      top: -10px;
+    }
+  }
+}
+
+/* menu btn */
+
+.menu-btn {
+  display: none;
+}
+
+.menu-btn:checked ~ .menu {
+  max-height: 300px;
+}
+
+.menu-btn:checked ~ .menu-icon .nav-icon {
+  background: transparent;
+}
+
+.menu-btn:checked ~ .menu-icon .nav-icon:before {
+  transform: rotate(-135deg);
+  top: 0;
+}
+
+.menu-btn:checked ~ .menu-icon .nav-icon:after {
+  transform: rotate(135deg);
+  top: 0;
+}
