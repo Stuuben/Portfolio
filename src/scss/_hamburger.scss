@@ -37,6 +37,9 @@
     overflow: hidden;
     background-color: var.$tertiary-color;
     font-size: 1.3rem;
+    @include mix.for-tablets {
+      gap: 40;
+    }
 
     p {
       font-size: 1rem;
@@ -74,6 +77,35 @@
 
   @include mix.for-tablets {
     max-height: none;
+  }
+  li {
+    position: relative;
+
+    /*  &:hover {
+      transition: all ease-in-out 0.25s; */
+    &::after {
+      opacity: 0;
+      content: attr(data-title);
+      position: absolute;
+      top: 0;
+      left: 130;
+      right: 0;
+      bottom: 0;
+
+      text-align: center;
+      width: max-content;
+      line-height: 1;
+      height: fit-content;
+      border-radius: 24px;
+      background-color: beige;
+      color: #333;
+      padding: 5px;
+      font-size: medium;
+      transition: all ease-in-out 0.25s;
+    }
+    &:hover:after {
+      opacity: 1;
+    }
   }
 }
 
