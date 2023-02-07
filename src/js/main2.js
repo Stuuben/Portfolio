@@ -9,7 +9,7 @@ function handleData(data) {
   let gitUL = document.createElement("ul");
   let gitDiv = document.getElementById("gitInfo");
 
-  for (let i = 8; i < data.length; i++) {
+  for (let i = 12; i < data.length; i++) {
     console.log(data);
     let createDiv = document.createElement("div");
     createDiv.classList.add("createDivRepo");
